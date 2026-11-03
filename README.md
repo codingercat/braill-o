@@ -2,58 +2,56 @@
 
 **A playful way to explore and learn Braille, one dot at a time.**
 
-Braill-o is a hands-on Braille learning device built around the idea of learning through play. The initial concept came from **Braille Wordle** taking inspiration from word-guessing games like Wordle and applying the same element of challenge and discovery to Braille learning.
+Braill-o is a hands-on Braille learning device built around the idea of learning through play. The concept originated from **Braille Wordle** — inspired by word-guessing games like Wordle, with a similar element of challenge and discovery applied to learning Braille.
 
 The device uses six tactile switches to represent the six dots of a Braille cell. Users can enter dot combinations, view the corresponding characters on an OLED display, and receive audio feedback.
 
-![Braill-o need assesment](assets/images/need_assesment.png)
+## The Idea
 
-## The Device
+Understanding the need for a more interactive approach to Braille learning was the starting point of this project.
 
-<!-- Add prototype photograph here -->
-![Braill-o prototype](assets/images/prototype.png)
+<p align="center">
+  <img src="assets/images/need_assesment.png" width="650" alt="Braill-o need assessment">
+</p>
 
-## How it works
+The initial device concept was explored through an AI-generated proof-of-concept visual before moving towards the physical prototype.
 
-- **Braille input:** Six tactile switches represent the six dots of a Braille cell.
-- **Visual feedback:** An OLED display shows the decoded character.
-- **Audio feedback:** A DFPlayer Mini and speaker provide audio output.
-- **Game concept:** The longer-term idea is to build word-based learning activities inspired by Wordle.
+<p align="center">
+  <img src="assets/images/device_ideation.png" width="550" alt="Early AI-generated Braill-o concept">
+</p>
+<p align="center">
+  <sub>Early AI-generated concept visual — for ideation purposes only.</sub>
+</p>
 
-## Hardware
+## The Prototype
 
-- Raspberry Pi Pico (RP2040)
-- 6 tactile switches
-- OLED display (I2C)
-- DFPlayer Mini and speaker
-- 3D-printed enclosure
+<p align="center">
+  <img src="assets/images/prototype.png" width="450" alt="Braill-o physical prototype">
+</p>
+
+## Hardware & Software
+
+| Component | Details |
+|---|---|
+| Microcontroller | Raspberry Pi Pico (RP2040) |
+| Braille Input | 6 tactile switches |
+| Display | OLED (I2C) |
+| Audio | DFPlayer Mini and speaker |
+| Enclosure | 3D-printed |
+| Development Environment | Arduino IDE |
+| Board Support | Earle Philhower RP2040 Arduino Core |
+| Libraries | Adafruit GFX, Adafruit SSD1306, DFPlayer library |
+| Programming Language | C++ |
 
 ## Firmware
 
-The repository contains the different stages of firmware development:
+The repository contains different stages of firmware development:
 
 | Folder | Description |
 |---|---|
 | `braille_decoder` | Initial Braille character decoder |
 | `braille_decoder_oled` | Decoder with OLED display |
-| `braille_decoder_oled_dfplayer` | Version integrating audio feedback |
-
-**Platform:** Arduino IDE with the Earle Philhower RP2040 Arduino core.
-
-## Repository Structure
-
-```text
-Braill-o/
-├── firmware/
-│   ├── braille_decoder/
-│   ├── braille_decoder_oled/
-│   └── braille_decoder_oled_dfplayer/
-├── assets/
-│   ├── images/
-│   └── videos/
-├── docs/
-└── README.md
-```
+| `braille_decoder_oled_dfplayer` | Integration of audio feedback |
 
 ---
 
