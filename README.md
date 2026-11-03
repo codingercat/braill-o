@@ -20,7 +20,7 @@ The initial device concept was explored through an AI-generated proof-of-concept
   <img src="assets/images/device_ideation.png" width="550" alt="Early AI-generated Braill-o concept">
 </p>
 <p align="center">
-  <sub>Early AI-generated concept visual — for ideation purposes only.</sub>
+  <sub>Early AI-generated concept visual; for ideation purposes only.</sub>
 </p>
 
 ## The Prototype
